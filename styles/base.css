@@ -16,8 +16,8 @@
     --accent4-color: #b10808;
 
     /* estilos de letas para el web site */
-    --heading-font: Paytone One, Georgia, serif;
-    --paragraph-font: "Trebuchet MS", Arial, sans-serif;
+    --heading-font: "Raleway", Georgia, serif;
+    --paragraph-font: "Raleway", Arial, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: #1e11cdbf; /* headlines on a white background */
@@ -82,6 +82,25 @@ h1 {
 ul {
     list-style-type: none; /* Elimina las viñetas */
 }
+#menu {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em; 
+    color: var(--primary-color);
+    text-align: center;
+    width: 50px;
+    height: auto;
+}
+
+#menu::before {
+    font-size: 2rem;
+    content: "☰";
+}
+
+#menu.open::before {
+    font-size: 1.5rem;
+    content: "X";
+}
 
 .navigation {
     display: flex;
@@ -93,7 +112,9 @@ ul {
     padding: 0;
     white-space: nowrap;
 }
-
+.navigation li {
+    display: none;
+}
 .navigation li a {
     display: block;
     padding: 1.5rem;
@@ -106,19 +127,41 @@ ul {
     color: var(--nav-hover-link-color);
     font-weight: 700;
 }
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
+}
 
+.navigation .active {
+    color: rgb(201, 104, 19);
+}
+
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 
 
 /*cuerpo del site*/
 main {
     display: flex;
+
     flex-direction: column;
    
     margin: 0 auto;
     padding: 20px;
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-white);
-}
+  }
+
 .card {
     margin: 5px;
 }
