@@ -1,0 +1,262 @@
+/* Google fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+ 
+    --primary-color: #03045e;
+    --secondary-color: #0077b6;
+    --accent1-color: #00b4d8;
+    --accent2-color: #90e0ef;
+    --accent3-color: #caf0f8;
+    --text-color-main: rgb(17, 14, 14);
+    --text-color-secondary: #bcbeb4;
+
+
+    --heading-font: "Montserra", sans-serif;
+    --paragraph-font: "Raleway", serif;
+
+    
+    --headline-color-on-white: var(--primary-color); 
+    --headline-color-on-color: var(--text-color-secondary); 
+    --paragraph-color-on-white: var(--text-color-main); 
+    --paragraph-color-on-color: var(--text-color-main); 
+    --paragraph-background-color: var(--accent1-color); 
+    --nav-link-color: var(--text-color-secondary);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color: var(--text-color-main);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header img {
+    width: 50%;
+    height: auto;
+  }
+  footer img {
+    width: 20%;
+    height: auto;
+  }
+  
+  header {
+    background-color: var(--accent1-color);
+    color: #fff;;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #nav-menu .navigation{
+    background-color: var(--primary-color);
+  }
+  
+  #current-events
+  {
+    background-color: var(--accent2-color);
+  }
+  #weather-card {
+    background-color: var(--accent3-color);
+  }
+  
+  #company-spotlight1 {
+    background-color: var(--accent2-color);
+  }
+  #company-spotlight2 
+  {
+    background-color: var(--accent3-color);
+  }
+  #company-spotlight3
+  {
+    background-color: var(--accent2-color);
+  }
+
+
+/* Dark Mode Button Switch ********************* */
+.dark-mode-btn {
+    display: flex;
+    order: 4;
+}
+.toggle {
+    background-color: #1e293b;
+    width: 50px;
+    height: 21px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-info input {
+    display: none;
+}
+.dark-mode-btn input {
+    display: none;
+}
+.slider {
+    height: 15px;
+    width: 15px;
+    background-color: var(--nav-link-color);
+    border-radius: 12px;
+    margin: 4px;
+}
+input:checked + .toggle {
+    background-color: var(--nav-link-color);
+    /* background-color: #1e293b; */
+}
+input:checked + .toggle > .slider {
+    align-self: flex-end;
+    background-color: #1e293b;
+}
+
+
+  /*HEADER GRID */
+  
+  section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  /*HERO IMG*/
+  .hero-container {
+    position: relative;
+  }
+  
+  #hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .call-to-action {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .cta-button {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+   /*FOOTER GRID*/
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  #contact-info {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    place-items: center;
+    background-color: var(--accent1-color);
+  }
+  
+  #dev-info {
+    background-color: var(--primary-color);
+  }
+  #footer-img {
+    grid-row: 1/5;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* HAMBURGUER MENU */
+  #menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "🔙";
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+  .open li {
+    display: block;
+    width: 100%;
+  }
+  .open li a {
+    display: block;
+  }
+  
+  .active::before {
+    content: "📍 ";
+  }
+  
+  .stuff {
+    margin: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+  }
+  
+ 
