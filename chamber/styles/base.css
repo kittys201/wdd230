@@ -161,6 +161,20 @@ input:checked + .toggle > .slider {
     border: none;
     cursor: pointer;
   }
+
+  #img-header{
+    width: 75px;
+  }
+
+ .spotlight > img{
+    width: 75px;
+ }
+ #event-icon {
+ width: 75px;
+}
+ #footer-img{
+    width: 75px;
+ }
    /*FOOTER GRID*/
   footer {
     background-color: #333;
