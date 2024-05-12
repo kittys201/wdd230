@@ -50,7 +50,7 @@ body {
   
   header {
     background-color: var(--accent1-color);
-    color: #fff;;
+    color: var(--text-color-main);
     text-align: center;
     padding: 10px;
     display: flex;
@@ -177,12 +177,16 @@ input:checked + .toggle > .slider {
  }
    /*FOOTER GRID*/
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color:var(--secondary-color);
+    color: var(--text-color-main);
     text-align: center;
     padding: 10px;
     bottom: 0;
     width: 100%;
+  }
+
+  #contact-info > h2{
+    color:var(--text-color-main)
   }
   #contact-info {
     display: grid;
@@ -192,7 +196,7 @@ input:checked + .toggle > .slider {
   }
   
   #dev-info {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
   }
   #footer-img {
     grid-row: 1/5;
