@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <title>Jennifer Cristina Gonzalez Pina de Chacon - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development. Jennifer Cristina Gonzalez Pina de Chacon's course assignment portal.">
-    <meta name="author" content="Jennifer Cristina Gonzalez Pina de Chacon">
+    <title>Jennifer Cristina Gonzalez Pina  - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Jennifer Cristina Gonzalez Pina 's course assignment portal.">
+    <meta name="author" content="Jennifer Cristina Gonzalez Pina">
     <!-- Facebook Meta Tags -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kittys201.github.io/wdd230/" />
-    <meta property="og:title" content="Jennifer Cristina Gonzalez Pina de Chacon - WDD 230 - Web Frontend Development" />
+    <meta property="og:title" content="Jennifer Cristina Gonzalez Pina  - WDD 230 - Web Frontend Development" />
     <meta property="og:description" content="WDD 230 - Web Frontend Development course assignment portal for Jennifer Cristina Gonzalez Pina de Chacon" />
     <meta property="og:image" content="https://kittys201.github.io/wdd230/images/atardecer-en-sao-bernardo-do-campo.jpg" />
     <meta property="og:image:type" content="image/png" />
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:title" content="Jennifer Cristina Gonzalez Pina de Chacon - WDD 230 - Web Frontend Development" />
-    <meta name="twitter:description" content="WDD 230 - Web Frontend Development course assignment portal for Samuel Chacon" />
+    <meta name="twitter:title" content="Jennifer Cristina Gonzalez Pina  - WDD 230 - Web Frontend Development" />
+    <meta name="twitter:description" content="WDD 230 - Web Frontend Development course assignment portal for Jennifer Gonzalez" />
     <meta name="twitter:image" content="https://kittys201.github.io/wdd230/images/atardecer-en-sao-bernardo-do-campo.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +31,8 @@
 <body>
     <header>
        <div id="hdTitle">
-        <img id="profile-img" src="images/imagesprofile.jpg" alt="Profile Picture">
-        <span>Jennifer Cristina Gonzalez Pina de Chacon </span>
+        <img id="profile-img" src="images/imagesprofile.webp" alt="Profile Picture" loading="lazy">
+        <span>Jennifer Cristina Gonzalez Pina  </span>
        </div>
         <button id="menu"></button>
         <div id="mode">🌙</div>
@@ -47,6 +47,17 @@
     </header>
    
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width:959px )" srcset="./images/Templo_de_sao_paulo-small.webp">
+                <source media="(min-width:960px )" srcset="./images/sao_paulo_brazil_temple_large.webp">
+                <img src="./images/sao_paulo_brazil_temple_large.webp" 
+                width="960" height="691" alt="Templo de Sao Paulo-Brasil" id="hero-image" loading="lazy">
+            </picture>
+                <div class="herolabel">
+                    <p>Sao Paulo Temple</p>
+                </div>
+            </div>
         <h1 class="attrib" >WDD 230: Web Frontend Development</h1>
         <div class="card-grid">
         <section class="card">
@@ -61,7 +72,10 @@
                     <li>Week 02: <a href="./week02/design.html" target="_blank" >Activity 1</a> |
                         <a href="https://codepen.io/Jennifer-Cristina-Gonzalez-Pina/pen/NWmZgye" target="_blank">Activity 2</a>|
                         <a href="./week02/bom.html">Activity 3</a></li>
-                    <li>Week 03:</li>
+                    <li>Week 03: <a href="./week03/images/landscape-small.webp" target="_blank" >WEBP</a> |
+                        <a href="./week03/lazyload.html" target="_blank">Lazyload</a>|
+                        <a href="./week03/responsive-images.html">Responsive Images</a>|
+                        <a href="./week03/bom.html">New Bom</a></li>
                     <li>Week 04:</li>
                     <li>Week 05:</li>
                     <li>Week 06:</li>
@@ -74,16 +88,21 @@
             <div class="card-header">
                 <h2>Information</h2>
              </div>
+             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
              <div class="card-content" >
 
              </div>
 
         </section>
         </div>
+        <div  class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d456.5675199855313!2d-46.52658913593257!3d-23.72810988453281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbr!4v1715572849809!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
     </main>
     <footer>
         <div class="footer-info">
-        <p>&copy; <span id="cYear"></span> Jennifer Cristina Gonzalez Pina de Chacon </p>
+        <p>&copy; <span id="cYear"></span> Jennifer Cristina Gonzalez Pina </p>
     </div>
         <p id="lastModified"></p>
     </footer>

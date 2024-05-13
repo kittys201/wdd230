@@ -14,7 +14,10 @@
     .attrib {
         font-size: 1.75em;
     }
-
+    #hero-image {
+        height: 100%;
+        width: fit-content;
+    }
     
     .card-grid {
         display: grid;
