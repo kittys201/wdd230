@@ -19,7 +19,7 @@ const  encen = document.querySelector("#mode");
 const  message= document.querySelector("#message");
 const  message1 =document.querySelector("h2 > span.label");
 const  message2 = document.querySelector("span.visits");
-const  message3 = document.querySelector("#gallery-header > h1");
+const  message3 = document.querySelector("#gallery-header > h2");
 const  contactin = document.querySelector("#contact-info");
 const navmenu = document.querySelector("#nav-menu");
 
