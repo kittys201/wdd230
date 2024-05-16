@@ -24,6 +24,8 @@ const  contactin = document.querySelector("#contact-info");
 const navmenu = document.querySelector("#nav-menu");
 
 
+
+
 modeButton.addEventListener("click", () => {
   if (modeButton.textContent.includes("🌝")) {
     main.style.background = "var(--primary-color)";
@@ -32,6 +34,7 @@ modeButton.addEventListener("click", () => {
     menu.style.background = "var(--primary-color)";
     contact.style.background = "var(--primary-color)";
     dev.style.background = "var(--primary-color)";
+    dev.style.color ="#fff"
     h1.style.color = "#fff";
     encen.style.color = "#fff";
     message.style.color = "#fff";
@@ -62,18 +65,7 @@ modeButton.addEventListener("click", () => {
 });
 
 
-// Toggle Dark/Light Mode
-function screenMode() {
-    const element = document.body;
-    element.classList.toggle("dark-mode");
 
-    const sections = document.querySelectorAll(
-        "main, current-events, weather-card, company-spotlight1, company-spotlight2, company-spotlight3"
-    );
-    sections.forEach((section) => {
-        section.classList.toggle("dark-mode");
-    });
-}
 
 
 //menu hambur
