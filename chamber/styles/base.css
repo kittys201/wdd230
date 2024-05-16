@@ -41,7 +41,7 @@ body {
   }
 
   #main-index{
-    height: 35 max-content;
+    height: max-content;
   }
   
   header img {
@@ -321,7 +321,7 @@ figcaption {
   display: block;
 }
 
-#main-index > gallery  > img{
+#main-index > .gallery  > img{
   width: 700;
   height: auto;
 }
