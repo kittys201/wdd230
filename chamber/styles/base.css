@@ -202,7 +202,7 @@ input:checked + .toggle > .slider {
   
   #dev-info {
     background-color: var(--accent2-color);
-    color: var(--accent3-color);
+    color: black;
   }
   #footer-img {
     grid-row: 1/5;

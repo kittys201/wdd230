@@ -34,7 +34,7 @@ modeButton.addEventListener("click", () => {
     menu.style.background = "var(--primary-color)";
     contact.style.background = "var(--primary-color)";
     dev.style.background = "var(--primary-color)";
-    dev.style.color ="#fff"
+    dev.style.color ="#fff";
     h1.style.color = "#fff";
     encen.style.color = "#fff";
     message.style.color = "#fff";
@@ -45,12 +45,13 @@ modeButton.addEventListener("click", () => {
     navmenu.style.background ="var(--accent1-color)";
 
 
-    modeButton.textContent = "Light Mode 💡";
+modeButton.textContent = "Light Mode 💡";
   } else {
     main.style.background = "#fff";
     header.style.background = "var(--accent1-color)";
     contact.style.background = "var(--accent1-color)";
-    dev.style.background = "var(--primary-color)"
+    dev.style.background = "var(--primary-color)";
+    dev.style.textContent = "#000";
     menu.style.background = "#03045e";
     h1.style.color = "#000";
     encen.style.color = "#000";
@@ -64,7 +65,18 @@ modeButton.addEventListener("click", () => {
   }
 });
 
+// Toggle Dark/Light Mode
+function screenMode() {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
 
+    const sections = document.querySelectorAll(
+        "main, current-events, weather-card, company-spotlight1, company-spotlight2, company-spotlight3"
+    );
+    sections.forEach((section) => {
+        section.classList.toggle("dark-mode");
+    });
+}
 
 
 
@@ -95,7 +107,7 @@ let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 // 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
 if (numVisits !== 0) {
-  visitsDisplay.textContent = ` ${numVisits}`;
+  visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
 } else {
   visitsDisplay.textContent = `First Visit!`;
 }

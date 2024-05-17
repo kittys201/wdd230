@@ -43,37 +43,15 @@
                  <li><a href="index.html">Home</a></li>
                  <li><a href="chamber/index.html">Chamber</a></li>
                  <li><a href="chamber/chamber-site-plan.html">Site Plan</a></li>
-                 <li><a href="#">Form</a></li>
+                 <li><a href="form.html">Form</a></li>
              </ul>
          </nav>
      </header>  
      <main>
-        <form action="record.html" method="get" onsubmit="return validatePasswords()">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters and alphanumeric">
-            </div>
-            <div>
-                <label for="confirm_password">Confirm Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain" placeholder="exemplo@byui.edu">
-            </div>
-            <div>
-                <label for="page_rating">Page Rating:</label>
-                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="5" oninput="updateRangeValue(this.value)">
-                <output id="rangeValue">6</output>
-            </div>
-            <div>
-                <button type="submit">Senda Value</button>
-            </div>
-        </form>
+        <section>
+            <h2>Form Submission Confirmation</h2>
+            <p>Thank you for submitting your information. Your information has been received.</p>
+        </section>
      </main> 
      <footer>
         <div class="footer-info">
