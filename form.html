@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/form.css">
     <script src="./scripts/getDates.js"></script>
-    <script src="./scripts/form.js"></script>
+   
 </head>
 <body>
     <header>
@@ -63,15 +63,15 @@
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain" placeholder="exemplo@byui.edu">
+                <input type="email" id="email" name="email" placeholder="exemplo@byui.edu" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address from the byui.edu domain" >
             </div>
             <div>
                 <label for="page_rating">Page Rating:</label>
-                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="5" oninput="updateRangeValue(this.value)">
-                <output id="rangeValue">6</output>
+                <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" value="6" oninput="updateRangeValue(this.value)">
+                <output id="rValue">6</output>
             </div>
             <div>
-                <button type="submit">Senda Value</button>
+                <button type="submit">Send Value</button>
             </div>
         </form>
      </main> 
@@ -81,6 +81,6 @@
     </div>
         <p id="lastModified"></p>
     </footer>
-
+    <script src="./scripts/form.js"></script>
 </body>
 </html>

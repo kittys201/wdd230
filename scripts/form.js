@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+
     function validatePasswords() {
         const password = document.getElementById('password');
         const confirmPassword = document.getElementById('confirm_password');
@@ -13,6 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     function updateRangeValue(val) {
-        document.getElementById('rangeValue').textContent = val;
+        document.getElementById('rValue').textContent = val;
     }
-});

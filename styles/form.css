@@ -2,7 +2,7 @@ header, nav, main, footer {
     margin: 20px;
 }
 
-/* Form styles */
+
 form {
     border: 1px solid #ccc;
     padding: 20px;
@@ -48,14 +48,14 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-color);
     color: #f4f4f4;
 }
 
-/* Pseudo-class CSS variables */
+
 :root {
     --background-color: #f4f4f4;
-    --text-color: #333;
+    --text-color: #000;
     --border-color: #ccc;
 }
 
