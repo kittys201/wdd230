@@ -3,7 +3,7 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <link rel="icon" type="image/ico" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -143,13 +143,12 @@
         <form method="get" action="thank-you.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top"> First Name*<input type="text" name="fname" required></label>
-                <label class="top"> Last Name*<input type="text" name="lname" required></label>
-                <label class="top"> Title in Organization*<input type="text" name="jobRole" required
-                        pattern="[a-zA-Z\- ]{7,}"></label>
-                <label class="top"> email*<input type="email" name="email" required placeholder="hello@company.com"></label>
-                <label class="top"> Phone*<input type="tel" name="Phone" required></label>
-                <label class="top"> Business/Organization name*<input type="text" name="Organization"></label>
+                <label class="top"> First Name*<input type="text" name="fname" id="fname" required></label>
+                <label class="top"> Last Name*<input type="text" name="lname" id="lname" required></label>
+                <label class="top"> Title in Organization*<input type="text" name="jobRole" id="jobRole" required pattern="[a-zA-Z\- ]{7,}"></label>
+                <label class="top"> Email*<input type="email" name="email" id="email" required placeholder="hello@company.com"></label>
+                <label class="top"> Phone*<input type="tel" name="Phone" id="phone" required></label>
+                <label class="top"> Business/Organization name*<input type="text" name="Organization" id="organization" required></label>
             </fieldset>
             <fieldset>
                 <legend>Membership</legend>
@@ -160,8 +159,9 @@
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>
-                <label class="sbs"><input type="text" name="description"></label>
+                <label class="sbs"><textarea name="description" id="description"></textarea></label>
             </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
             <input type="submit" value="Join Us" class="submitBtn">
         </form>
 
