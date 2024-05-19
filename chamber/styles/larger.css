@@ -93,8 +93,14 @@
   #main-join {
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
   }
-
+  #join-list{
+    max-width: 800px;;
+  }
+  #aside-join > div{
+    width: 560px;
+  }
   .grid-directory {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
