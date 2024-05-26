@@ -60,37 +60,33 @@
             </div>
         <h1 class="attrib" >WDD 230: Web Frontend Development</h1>
         <div class="card-grid">
-        <section class="card">
-            <div class="card-header">
-               <h2>Learning Activities</h2>
-            </div>
-            <div class="card-content" >
-                <ul>
-                    <li>Week 01: <a href="https://codepen.io/Jennifer-Cristina-Gonzalez-Pina/pen/VwNRaxM" target="_blank" >Activity 1</a> |
-                    <a href="week01/media-query.html">Activity 2</a>|
-                    <a href="chamber/chamber-site-plan.html">Activity 3</a></li>
-                    <li>Week 02: <a href="./week02/design.html" target="_blank" >Activity 1</a> |
-                        <a href="https://codepen.io/Jennifer-Cristina-Gonzalez-Pina/pen/NWmZgye" target="_blank">Activity 2</a>|
-                        <a href="./week02/bom.html">Activity 3</a></li>
-                    <li>Week 03: <a href="./week03/images/landscape-small.webp" target="_blank" >WEBP</a> |
-                        <a href="./week03/lazyload.html" target="_blank">Lazyload</a>|
-                        <a href="./week03/responsive-images.html">Responsive Images</a>|
-                        <a href="./week03/bom.html">New Bom</a></li>
-                    <li>Week 04: <a href="https://codepen.io/Jennifer-Cristina-Gonzalez-Pi-a/pen/XWwXVdZ?editors=1100" target="_blank" >Pseudo-class Fun</a> |
-                        <a href="./week04/images/css_combinators.jpg" target="_blank">CSS Combinators</a>|
-                        <a href="./week04/tablebuild.html" target="_blank">table build</a>|
-                        <a href="./week04/form-start/Form-start/index.html"  target="_blank">Form</a></li>
-                    <li>Week 05:</li>
-                    <li>Week 06:</li>
-
-                    
-                </ul>
-        </div>
-        </section>
+            <section class="card">
+                <div class="card-header">
+                    <h2>Learning Activities</h2>
+                </div>
+                <div class="card-content">
+                    <ul class="la-card"></ul>
+                </div>
+            </section>
         <section class="card">
             <div class="card-header">
                 <h2>Information</h2>
              </div>
+             <article id="weather">
+                <h4>Weather Right Now</h4>
+                <p id="location"></p>
+
+                <figure>
+                    <div class="temp-area"></div>
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+
+                <div class="alt-weather">
+                    <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                    <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                    <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                </div>
+            </article>
              <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
              <div class="card-content" >
 
@@ -109,7 +105,8 @@
     </div>
         <p id="lastModified"></p>
     </footer>
-
+<script src="scripts/links.js"></script>
+<script src="scripts/weather.js"></script>
      
 </body>
 </html>
