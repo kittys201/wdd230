@@ -310,7 +310,7 @@ footer .footer-info {
     align-items: center;
     width: 100%;
 }
-/* Weather Article ********************************* */
+/********** Weather Article **************************** */
 
 #weather h4 {
     margin: 0;
@@ -367,7 +367,7 @@ footer .footer-info {
     align-items: center;
     gap: 2px;
     padding: 15px;
-    /* border: 1px solid var(--accent3-color); */
+ 
     font-size: .8rem;
 }
 .weather-box span{
