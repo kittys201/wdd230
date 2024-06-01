@@ -4,7 +4,9 @@ let dateString = currentDate.toDateString();
 
 document.querySelector("#currentDate").innerHTML = dateString;
 
-
+function redirect() {
+  window.location.href = 'join.html';
+}
 //*dark mode
 
 const modeButton = document.querySelector("#mode");

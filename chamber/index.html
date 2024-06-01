@@ -34,7 +34,10 @@
 </head>
 
 <body>
-
+    <div id="banner" class="banner" role="alert">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        <button type="button" id="closeBanner" aria-label="Close">x</button>
+        </div>
      <header>
         <div id="logo">
             <img id="img-header"  loading="lazy" src="./images/logo-sbc-sin-fondo-small.webp" alt="Sao Bernardo Logo">
@@ -70,7 +73,33 @@
                 <button onclick="redirect()" class="cta-button">Join Us Today</button>
             </div>
         </div>
-        <section id="current-events">
+     
+
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div class="weather-info">
+                <article id="weather">
+                    <h3>Weather Right Now</h3>
+                    <p id="location"></p>
+                    <figure>
+                        <div class="temp-area">
+                        </div>
+                        <figcaption id="weather-description"></figcaption>
+                    </figure>
+                    <div class="alt-weather">
+                        <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                        <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                        <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                        
+                    </div>
+                </article>
+                <article id="three-day">
+                    <h3>three Day Forecast</h3>
+                    <div id="forecast"></div>
+                </article>
+            </div>
+        </section>
+        <section id="current-events"class="spotlight">
             <img src="./images/evento.webp"  loading="lazy" alt="event icon" id="event-icon">
             <h2>Upcoming Event:</h2>
             <h4><strong>Event Title: </strong>Business Networking Gala</h4>
@@ -78,23 +107,6 @@
             <p><strong>Location: </strong>Grand City Convention Center</p>
             <p>Join us for an evening of networking and celebration at the Annual Business Networking Gala hosted by
                 the São Bernardo do Campo Chamber of Commerce.</p>
-        </section>
-
-        <section id="weather-card">
-            <h2> Weather Information</h2>
-            <h4>São Bernardo do Campo , São Paulo</h4>
-            <div class="weather">
-                <h4>Today</h4>
-                
-            </div>
-            <h4>Forecast 3 days</h4>
-            <section class="weather" id="weather-forecast">
-                <p id="message"><span></span></p>
-                <div>
-                   
-                </div>
-              
-            </section>
         </section>
         <section id="company-spotlight1" class="spotlight">
             <img src="./images/volkswagen.jpg"  loading="lazy" alt="images/volkswagen-logo.jpg">
@@ -123,6 +135,22 @@
             <h4>Gold Membership</h4>
             <a href="https://www.catalogosofertas.com.br/lojas/walmart"  target="_blank">https://www.catalogosofertas.com.br/lojas/walmart</a>
         </section>
+        <section id="company-spotlight4" class="spotlight">
+            <img src="./images/logos-json/Itau-logo.webp" loading="lazy" alt="imagen itau bank">
+            <h2>Itau Bank</h2>
+            <p>Finance Company</p>
+            <p>Rua Marechal Deodoro, 785 Centro 9710193 São Bernardo do Campo</p>
+            <p>Member Since: 1999</p>
+            <h4>Gold Membership</h4>
+            <a href="https://www.itau.com.br/"  target="_blank">https://www.itau.com.br/</a>
+        </section>
+        <div id="gallery-header">
+            <h2>São Bernardo do Campo Gallery</h2>
+                <p id="message"><span></span></p>
+            
+            <h2><span class="label">Number of Visits: </span><span class="visits"></span></h2>
+            
+         </div>
     </main>
     <footer>
         <div id="contact-info">
@@ -144,6 +172,8 @@
     </footer>
     
     <script src="./scripts/sbc-chamber.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
    
 </body>
 </html>

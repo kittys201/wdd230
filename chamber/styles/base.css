@@ -12,6 +12,7 @@
     --accent1-color: #00b4d8;
     --accent2-color: #90e0ef;
     --accent3-color: #caf0f8;
+    --accent4-color: orange;
     --text-color-main: rgb(17, 14, 14);
     --text-color-secondary: #bcbeb4;
 
@@ -87,6 +88,119 @@ body {
   {
     background-color: var(--accent2-color);
   }
+  #company-spotlight4
+  {
+    background-color: var(--accent2-color);
+  }
+/* Weather and Forecast ****** */
+
+#weather {
+  width: 100%;
+
+}
+#weather h3,
+#three-day h3 {
+  margin: 0;
+  padding: 15px;
+  background-color: rgb(160, 193, 237);
+  color: var(--text-color-main);
+  text-transform: uppercase;
+}
+
+#weather p {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+#weather figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.temp-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#current-temp {
+  font-size: 3em;
+  font-weight: 800;
+}
+.temp-area figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+#weather-description {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.alt-weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 5px;
+}
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 15px;
+  font-size: 0.8rem;
+}
+.weather-box span {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+#three-day {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#forecast .weather-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+ 
+}
+#forecast .weather-day:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.weather-day h5 {
+   font-weight: 800;
+  text-transform: uppercase;
+}
+.weather-day figcaption {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+#forecast figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.temp-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temp-div p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.temp-div p:nth-last-child(1) {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
 
 
 /* Dark Mode Button Switch ********************* */
@@ -523,4 +637,32 @@ input {
 
 .list section:nth-child(even) {
   background-color: #e5e6e7;
+}
+/************** Banner on home page******************* */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--accent4-color);
+  color: var(--text-color-main);
+  padding: 30px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.banner-hide {
+  display: none;
+}
+
+.banner p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+#closeBanner {
+  background-color:var(--accent4-color);
+  color: var(--text-color-primary);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: x-large;
+ 
 }
