@@ -1,0 +1,37 @@
+# What is humans.txt? It's a TXT file that contains information about the different people who have contributed to building this website.
+# This helps for questions about the functionality and future development.
+# For more information on this file visit humanstxt.org
+
+# The humans responsible & technology colophon
+==============================================
+
+# TEAM
+
+    WDD-230
+    	Name:  Jennifer Gonzalez
+    	Role: Student Developer
+        @wkittys201
+
+
+# THANKS
+
+Samuel Chacon
+
+
+
+# TECHNOLOGY COLOPHON
+
+    Standards: JavaScript, HTML5, CSS3
+    Components: 
+
+# SITE
+
+    Site Name: Chamber - WDD230
+    Site URL: https://kittys201.github.io/wdd230/chamber/
+    Version: 1.0.0
+	Last updated: 2023-12-06
+    Creation date: 2024-01-10
+	Language: English
+	Doctype: HTML5
+	IDE: VS Code
+    License: MIT
